@@ -127,7 +127,7 @@
 
 - Faster onboarding of new developers (package environments as containers).
 
-- Implement better Continous Integration (containers are faster to create than VMs and leave your CI environment clean).
+- Implement better _Continuous Integration_ (containers are faster to create than VMs and leave your CI environment clean).
 
 - Use container images as build artefacts, store them in registry with multiple versions (enables easy rollback in case of issue), deploy the same image in all environments.
 
