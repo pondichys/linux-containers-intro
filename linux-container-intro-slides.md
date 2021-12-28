@@ -5,23 +5,24 @@
 
 ## Objectives
 
-- This slide deck is an introduction to Linux Containers for non technical people.
+- This slide deck is a brief introduction to Linux Containers for non technical people.
 
-- We won't run any container nor explore deep technical details on how containers are implemented here.
+- We won't run any container here.
 
 ---
 
 ## The hype about Linux containers
 
-
 - The way we develop software is evolving.
 
 - Before (can still be current for some of us ...)
+
   - Monolithic application
   - Long development cycle (waterfall methodology)
   - Vertical scaling focused (add CPU, memory and disks aka run on a beefier hardware)
 
 - Now:
+
   - loosely coupled services
   - _Agile_ development
   - Horizontal scaling (running multiple replicas)
@@ -51,19 +52,19 @@
 
 ## The deployment matrix from hell
 
-![the deployment matrix from hell](images/deployment_matrix_hell.png)
+<img class="r-stretch" src="images/deployment_matrix_hell.png" />
 
 ---
 
 ## Parallel with the shipping industry
 
-<img src="images/shipping_problem.png" width="650" height="560" />
+<img class="r-stretch" src="images/shipping_problem.png" />
 
 ---
 
 ## intermodal shipping containers
 
-<img src="images/shipping_solution.png" width="650" height="560" />
+<img class="r-stretch" src="images/shipping_solution.png" />
 
 ---
 
