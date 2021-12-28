@@ -1,34 +1,13 @@
+<!-- .slide: data-background-image="images/paul-teysen-bukjsECgmeU-unsplash.jpg" -->
 # Introduction to Linux Containers
-
----
-
-## Summary
-
-1. Objectives
-
-1. The hype about Linux containers
-
-1. Deployment complexity
-
-1. Parallel with shipping industry
-
-1. Intermodal shipping containers
-
-1. Shipping containers eco-system
-
-1. Shipping container system for applications
-
-1. Benefits
-
-
 
 ---
 
 ## Objectives
 
-- This slide deck is an introduction to Linux Containers for non technical people.
+- This slide deck is a brief introduction to Linux Containers for non technical people.
 
-- We won't run any container nor explore deep technical details on how containers are implemented here.
+- We won't run any container here.
 
 ---
 
@@ -36,12 +15,14 @@
 
 - The way we develop software is evolving.
 
-- Before (can still be current for some of us :wink: )
+- Before (can still be current for some of us ...)
+
   - Monolithic application
   - Long development cycle (waterfall methodology)
   - Vertical scaling focused (add CPU, memory and disks aka run on a beefier hardware)
 
 - Now:
+
   - loosely coupled services
   - _Agile_ development
   - Horizontal scaling (running multiple replicas)
@@ -65,29 +46,31 @@
 
 ## The deployment problem
 
-![the deployment problem](images/deployment_problem.png)
+<img class="r-stretch" src="images/deployment_problem.png" />
 
 ---
 
 ## The deployment matrix from hell
 
-![the deployment matrix from hell](images/deployment_matrix_hell.png)
+<img class="r-stretch" src="images/deployment_matrix_hell.png" />
 
 ---
 
 ## Parallel with the shipping industry
 
-![the shipping problem](images/shipping_problem.png)
+<img class="r-stretch" src="images/shipping_problem.png" />
 
 ---
 
-## The solution : intermodal shipping containers
+## intermodal shipping containers
 
-![shipping container solution](images/shipping_solution.png)
+<img class="r-stretch" src="images/shipping_solution.png" />
+
+---
 
 ## A new shipping ecosystem
 
-![new shipping ecosystem](images/new_shipping_ecosystem.png)
+<img class="r-stretch" src="images/new_shipping_ecosystem.png">
 
 - 90% of all cargo is now shipped in standard containers
 - faster load / unload of ships
@@ -95,41 +78,54 @@
 
 ---
 
-## Linux containers = shipping containers for applications
+## Containers for applications
 
-![deployment solution](images/deployment_solution.png)
+<img class="r-stretch" src="images/deployment_solution.png" />
 
-> Remark : it is possible to package stateful applications like databases or message brokers in containers but it requires more expertise because data persistence in containers can be tricky.
+<div style="font-size: 16px; text-align: left;">
+
+Warning: it is possible to package stateful applications like databases or message brokers in containers but it requires more expertise because data persistence in containers is tricky.
+
+</div>
 
 ---
 
-# Some technical stuff !
+# Technical advantages
 
 ---
 
 ## No more dependency hell
 
-- Application packaging can be resumed to the following steps :
+<div style="text-align: left;">
 
-  1. Define, test and document (example in `INSTALL.txt` file) installation instructions.
+Application packaging can be resumed to the following steps :
 
-  2. Create some installation script that works for you as developer.
 
-  3. Turn this into a `Dockerfile` (or a container build file).
+1. Define, test and document (example in `INSTALL.txt` file) installation instructions.
 
-  4. Build the container image and test it.
+2. Create some installation script that works for you as developer.
 
-  5. If the container works on your machine, it will work on every other machines that can run containers.
+3. Turn this into a `Dockerfile` (or a container build file).
 
-  ---
+4. Build the container image and test it.
+
+5. If the container works on your machine, it will work on every other machines that can run containers.
+
+</div>
+
+---
 
 ## Other use cases for Linux containers
 
 - Faster onboarding of new developers (package environments as containers).
 
-- Implement better Continous Integration (containers are faster to create than VMs and leave your CI environment clean).
+- Implement better _Continuous Integration_ (containers are faster to create than VMs and leave your CI environment clean).
 
 - Use container images as build artefacts, store them in registry with multiple versions (enables easy rollback in case of issue), deploy the same image in all environments.
+
+---
+
+# Last info
 
 ---
 
@@ -139,11 +135,16 @@
   
   1. User interface / API.
 
-  2. Capability to push / pull container images.
+  1. Capability to push / pull container images.
 
-  3. Create configuration file (`config.json`) for container runtimes (the tool that effectively runs the container).
+  1. Create JSON configuration file for container runtimes (the tool that effectively runs the container).
 
 - Most known container engine is [Docker](https://www.docker.com/), but other alternatives like [podman](https://podman.io/) or [LXD](https://linuxcontainers.org/lxd/introduction/) are growing fast due to some issues with the Docker implementation.
+
+---
+
+<!-- .slide: data-background-image="images/paul-teysen-bukjsECgmeU-unsplash.jpg" -->
+# That's all folks
 
 
 
