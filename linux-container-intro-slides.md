@@ -99,6 +99,17 @@ Warning: it is possible to package stateful applications like databases or messa
 
 ---
 
+# Challenges
+
+- Developers and application engineers need to learn how to build and run Linux containers.
+- Building efficient containers requires some practices.
+- Data persistence in containers is not easy.
+- Not everything fits in a Linux container.
+- Running containers in production 
+
+<img class="r-stretch" src="images/running_containers_in_prod.png">
+---
+
 ## Additional sources of information
 
 <div style="text-align: left;">
